@@ -26,5 +26,15 @@ namespace PruebaDeControles
         {
             MessageBox.Show(uC_EstadoCivil1.Valor);
         }
+
+        private void uC_Rating1_RatingChanged(object sender, EventArgs e)
+        {
+            //txtCalificacion.Text = ((MisControles.UC_Rating.RatingEventArgs)e).Rating.ToString();
+        }
+
+        private void uC_Rating1_RatingChanged(object sender, MisControles.UC_Rating.RatingEventArgs e)
+        {
+            txtCalificacion.Text = e.Rating.ToString();
+        }
     }
 }

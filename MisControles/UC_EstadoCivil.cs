@@ -25,7 +25,7 @@ namespace MisControles
             }
         }
 
-        public EventHandler EstadoCambiado;
+        public event EventHandler EstadoCambiado;
         public string Valor { get; private set; }
         public UC_EstadoCivil()
         {
